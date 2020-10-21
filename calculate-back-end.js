@@ -2,32 +2,44 @@
  * YOUR CODE HERE *
  ******************/
 
+
+ 
 function calculate(num1, num2, operator) {
   // Convert inputs to a number with 'Number()'
   num1 = Number(num1);
   num2 = Number(num2);
-  // Addition
-  if (operator === '+' || operator === 'plus' || operator === 'added to') {
-    return num1 + num2;
-  }
-  // Subtraction
-  else if (operator === '-' || operator === 'minus' || operator === 'subtracted from') {
-    return num1 - num2;
-  }
-  // Multiplication
-  else if (operator === 'x' || operator === 'times' || operator === 'X' || operator === 'multiplied by') {
-    return num1 * num2;
-  }
-  // Division
-  else if (operator === '/' || operator === 'divided' || operator === 'divided by') {
-    return num1 / num2;
-  }
-  // Modulus
-  else if (operator === '%' || operator === 'mod' || operator === 'modulus') {
-    return num1 % num2;
-  }
-  // Error Message
-  return `Sorry, that\'s not a mathematical operation!`;
+
+// Method 1: Ternary
+  return operator === '+' || operator === 'plus' || operator === 'added to' ? num1 + num2
+        : operator === '-' || operator === 'minus' || operator === 'subtracted from' ? num1 - num2
+        : operator === 'x' || operator === 'times' || operator === 'X' || operator === 'multiplied by' ? num1 * num2
+        : operator === '/' || operator === 'divided' || operator === 'divided by' ? num1 / num2
+        : operator === '%' || operator === 'mod' || operator === 'modulus' ? num1 % num2
+        : `Sorry, that\'s not a mathematical operation!`;
+
+// Method 2: If / Else
+  // // Addition
+  // if (operator === '+' || operator === 'plus' || operator === 'added to') {
+  //   return num1 + num2;
+  // }
+  // // Subtraction
+  // else if (operator === '-' || operator === 'minus' || operator === 'subtracted from') {
+  //   return num1 - num2;
+  // }
+  // // Multiplication
+  // else if (operator === 'x' || operator === 'times' || operator === 'X' || operator === 'multiplied by') {
+  //   return num1 * num2;
+  // }
+  // // Division
+  // else if (operator === '/' || operator === 'divided' || operator === 'divided by') {
+  //   return num1 / num2;
+  // }
+  // // Modulus
+  // else if (operator === '%' || operator === 'mod' || operator === 'modulus') {
+  //   return num1 % num2;
+  // }
+  // // Error Message
+  // return `Sorry, that\'s not a mathematical operation!`;
 }
 
 /*
