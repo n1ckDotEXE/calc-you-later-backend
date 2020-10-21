@@ -2,10 +2,8 @@
  * YOUR CODE HERE *
  ******************/
 
-
- 
 function calculate(num1, num2, operator) {
-  // Convert inputs to a number with 'Number()'
+// Convert inputs to a number with 'Number()'
   num1 = Number(num1);
   num2 = Number(num2);
 
